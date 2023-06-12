@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "192719753523",
+    "firebase_url": "https://plantapp-da3ca-default-rtdb.firebaseio.com",
+    "project_id": "plantapp-da3ca",
+    "storage_bucket": "plantapp-da3ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192719753523:android:39a72939b4d760dd7b6e46",
+        "android_client_info": {
+          "package_name": "com.example.plantappfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192719753523-4oov3d3gm2t9agum0e4p9au0bsojc6hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1GBT2TrLxI5WHkfH8u5vv9A3b0NFhtYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192719753523-4oov3d3gm2t9agum0e4p9au0bsojc6hv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PlantAppFireStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="next">NEXT</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="title_introduce_one">Identify Plants</string>
+    <string name="title_introduce_two">Learn Many Plants Species</string>
+    <string name="title_introduce_three">Read Many Articles About Plant</string>
+    <string name="description_introduce_one">You can identify the plants you dont know through your camera</string>
+    <string name="description_introduce_two">Lets learn about the many plant species that exist in this world</string>
+    <string name="description_introduce_three">Lets learn more about beautiful plants and read many articles about plants and gardening</string>
+</resources>
