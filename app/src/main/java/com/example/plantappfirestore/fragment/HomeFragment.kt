@@ -25,6 +25,7 @@ import com.example.plantappfirestore.adapter.HomePlantAdapter
 import com.example.plantappfirestore.databinding.HomeFragmentBinding
 import com.example.plantappfirestore.utils.Constant
 import com.example.plantappfirestore.utils.Util
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -112,21 +113,19 @@ class HomeFragment : Fragment() {
     }
 
     private fun getUser() {
-        val friendsRef: DatabaseReference? = ref?.child("Users")
-        friendsRef?.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                try {
-                    for (dataSnap in snapshot.children) {
-                        binding.tvName.text = "Hello ${dataSnap.child("fullName").value.toString()}"
-                    }
-
-                } catch (e: Exception) {
-
+        try {
+            FirebaseDatabase.getInstance().getReference("Users").child(
+                FirebaseAuth.getInstance().currentUser!!.uid
+            ).addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    binding.tvName.text = snapshot.child("fullName").value.toString()
                 }
-            }
 
-            override fun onCancelled(error: DatabaseError) {}
-        })
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(requireContext(), "Something wrong happened!", Toast.LENGTH_SHORT).show()
+                }
+            })
+        } catch (_: java.lang.Exception) { }
     }
 
     @SuppressLint("ObsoleteSdkInt")
