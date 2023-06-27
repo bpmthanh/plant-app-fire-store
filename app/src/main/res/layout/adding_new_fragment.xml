@@ -11,15 +11,17 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="45dp"
         android:scaleType="fitCenter"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/opensans_bold"
         android:text="Adding new"
         android:textColor="@color/light_black"
