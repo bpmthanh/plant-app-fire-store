@@ -17,6 +17,8 @@ import com.google.firebase.database.FirebaseDatabase
 import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
+
+    // Khởi tạo đối tượng
     private lateinit var binding: ActivitySignUpBinding
     private var mAuth: FirebaseAuth? = null
     private var email: String = ""
