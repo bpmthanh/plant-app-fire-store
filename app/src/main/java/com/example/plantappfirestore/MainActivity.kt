@@ -64,7 +64,7 @@ class MainActivity : BaseActivity() {
         car2["name"] = "Shylla Monic"
         car2["avatar"] = "https://www.fao.org.vn/wp-content/uploads/2022/12/hinh-anh-ca-canh-cuc-dep.jpg"
         car2["date"] = "201900000090000019"
-        car2["image"] = "https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/08/1660483140_363_Hinh-Nen-Ca-Vang-Dien-Thoai-Dep-Nhat.jpg"
+        car2["image"] = "https://snnptnt.binhdinh.gov.vn/assets/news//upload/files/tomato.jpg"
         car2["heart"] = "false"
         dbFireStore.collection("Articles").document("Shylla Monic").set(car2)
     }
